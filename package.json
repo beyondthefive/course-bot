@@ -1,0 +1,23 @@
+{
+  "name": "beyond-the-five-bot",
+  "scripts": {
+    "start": "nodemon bot.js",
+    "lint": "xo --fix"
+  },
+  "main": "bot.js",
+  "dependencies": {
+    "airtable": "^0.8.1",
+    "config": "^3.3.1",
+    "config.js": "^0.1.0",
+    "discord.js": "11.4.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3",
+    "xo": "^0.29.1"
+  },
+  "xo": {
+    "semicolon": false
+  }
+}
