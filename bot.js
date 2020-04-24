@@ -143,8 +143,7 @@ const stats = async (channel, message) => {
 
 							if (
 								parsedCourseName === cor.slice(0, -1).join(' ') ||
-                codeCheck.toLowerCase() ===
-                  cor.slice(0, -1).join(' ')
+                codeCheck.toLowerCase() === cor.slice(0, -1).join(' ')
 							) {
 								if (info === 'credits') {
 									return channel.send(
@@ -170,9 +169,7 @@ const stats = async (channel, message) => {
 									}
 
 									return channel.send(
-										element.Name +
-                      ' has the following prerequisite(s):\n' +
-                      o
+										element.Name + ' has the following prerequisite(s):\n' + o
 									)
 								}
 
@@ -303,6 +300,11 @@ client.on('message', async message => {
 				.setColor(bt5red)
 				.setTitle('Beyond The Five Bot Commands')
 				.setTimestamp()
+				.addField(
+					prefix + ' help',
+					'Shows you what you are looking at right now.'
+				)
+				.addField(prefix + ' ping', 'Display\'s bot and Discord API latency.')
 				.addField(
 					prefix + ' courses [category]',
 					'Lists all courses in a category.'
